@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>WULAN BOOKSTORE</title>
+  <script>
+    function showContent(menu) {
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(section => section.style.display = 'none');
+      document.getElementById(menu).style.display = 'block';
+    }
+
+    window.onload = function () {
+      showContent('home'); // Tampilkan HOME di awal
+    };
+  </script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header style="display: flex; align-items: center; padding: 10px;">
+    <img src="logo toko.jpg" alt="Logo" width="100" style="margin-right: 10px;">
+    <h1>WULAN BOOKSTORE</h1>
+  </header>
+
+  <!-- Menu Navigasi -->
+  <nav style="background-color: #0d57f8; color: white; padding: 10px;">
+    <ul style="display: flex; list-style: none; margin: 0; padding: 0; gap: 30px;">
+      <li style="cursor:pointer;" onclick="showContent('home')">HOME</li>
+      <li style="cursor:pointer;" onclick="showContent('buku')">BUKU</li>
+      <li style="cursor:pointer;" onclick="showContent('majalah')">MAJALAH</li>
+      <li style="cursor:pointer;" onclick="showContent('koran')">KORAN</li>
+    </ul>
+  </nav>
+
+  <!-- Konten -->
+  <main style="padding: 20px;">
+
+    <!-- HOME -->
+    <div id="home" class="section">
+        <table border="1" cellpadding="10">
+        <h2>Best Seller</h2>
+        <tr>
+          <td align="center">
+              <img src="buku2.jpg" alt="Ayo Membaca Buku" width="120"><br>
+              <strong></strong><br>
+              Ayo Membaca Buku<br>
+              <font color="red"><b>Rp69.750</b></font><br>
+              <s>Rp93.000</s><br>
+              <font color="red">25%</font>
+            </td>
+            <td align="center">
+              <img src="majalah1.jpg" alt="vogue" width="120"><br>
+              <strong></strong><br>
+              vogue<br>
+              <font color="red"><b>Rp75.000</b></font><br>
+              <s>Rp100.000</s><br>
+              <font color="red">25%</font>
+            </td>
+            <td align="center">
+              <img src="koran1.jpg" alt="koran kompas" width="120"><br>
+              <strong></strong><br>
+              koran kompas<br>
+              <font color="red"><b>Rp55.250</b></font><br>
+              <s>Rp65.000</s><br>
+              <font color="red">15%</font>
+            </td>
+        </table>
+      </tr>
+      <table border="1" cellpadding="10">
+        <tr>
+        <h3>Beranda</h3>
+        <td align="center">
+            <img src="koran1.jpg" alt="koran kompas" width="120"><br>
+            <strong></strong><br>
+            koran kompas<br>
+            <font color="red"><b>Rp55.250</b></font><br>
+            <s>Rp65.000</s><br>
+            <font color="red">15%</font>
+          </td>
+          <td align="center">
+            <img src="majalah1.jpg" alt="vogue" width="120"><br>
+            <strong></strong><br>
+            vogue<br>
+            <font color="red"><b>Rp75.000</b></font><br>
+            <s>Rp100.000</s><br>
+            <font color="red">25%</font>
+          </td>
+          <td align="center">
+            <img src="buku3.jpg" alt="sjahrir peran besar bung kecil" width="120"><br>
+            <strong></strong><br>
+            sjahrir peran besar bung kecil<br>
+            <font color="red"><b>Rp69.750</b></font><br>
+            <s>Rp93.000</s><br>
+            <font color="red">25%</font>
+          </td>
+          <td align="center">
+            <img src="buku4.jpg" alt="jangan kacau aku boleh tak" width="120"><br>
+            <strong>Aidil Ghazali</strong><br>
+            jangan kacau aku boleh tak<br>
+            <font color="red"><b>Rp75.000</b></font><br>
+            <s>100.000</s><br>
+            <font color="red">25%</font>
+          </td>
+          <td align="center">
+            <img src="koran3.jpg" alt="koran sindo" width="120"><br>
+            <strong></strong><br>
+            koran sindo<br>
+            <font color="red"><b>Rp65.750</b></font><br>
+            <s></s><br>
+            <font color="red"></font>
+          </td>
+    </table>
+      </div>
+    </tr>
+
+    <!-- BUKU -->
+    <div id="buku" class="section" style="display:none;">
+        <table border="1" cellpadding="10">
+      <h2>Best Seller</h2>
+      <tr>
+          <td align="center">
+            <img src="buku2.jpg" alt="ayo membaca buku" width="120"><br>
+            <strong></strong><br>
+            ayo membaca buku<br>
+            <font color="red"><b>Rp90.000</b></font><br>
+            <s></s><br>
+            <font color="red"></font>
+          </td>
+          <td align="center">
+            <img src="buku4.jpg" alt="Jangan kacau aku boleh tak" width="120"><br>
+            <strong>Aidil Ghazali</strong><br>
+            jangan kacau aku boleh tak?<br>
+            <font color="red"><b>Rp69.750</b></font><br>
+            <s>Rp93.000</s><br>
+            <font color="red">25%</font>
+          </td>
+          <td align="center">
+            <img src="buku5.jpg" alt=" Ekonomi Mikro" width="120"><br>
+            <strong>sri rahayu s.e.m.si</strong><br>
+            Ekonomi Mikro <br>
+            <font color="red"><b>Rp75.000</b></font><br>
+            <s>Rp100.000</s><br>
+            <font color="red">25%</font>
+          </td>
+      </tr>
+     </table>
+     <table border="1" cellpadding="10">
+      <h3>Daftar Buku</h3>
+      <tr>
+        <td align="center">
+            <img src="buku1.jpg" alt="Senja Bersama Ayah" width="120"><br>
+            <strong>rahayyupp</strong><br>
+            senja bersama ayah <br>
+            <font color="red"><b>Rp75.000</b></font><br>
+            <s></s><br>
+            <font color="red"></font>
+          </td>
+          <td align="center">
+            <img src="buku2.jpg" alt="ayo membaca buku" width="120"><br>
+            <strong></strong><br>
+            ayo membaca buku <br>
+            <font color="red"><b>Rp95.000</b></font><br>
+            <s></s><br>
+            <font color="red"></font>
+          </td>
+          <td align="center">
+            <img src="buku3.jpg" alt="sjahrir peran besar bung kecil" width="120"><br>
+            <strong></strong><br>
+            sjahrir peran besar bung kecil<br>
+            <font color="red"><b>Rp69.750</b></font><br>
+            <s>Rp93.000</s><br>
+            <font color="red">25%</font>
+          </td>
+          <td align="center">
+            <img src="buku4.jpg" alt=" jangan kacau aku boleh tak?" width="120"><br>
+            <strong>aidil ghazali</strong><br>
+            jangan kacau aku boleh tak?<br>
+            <font color="red"><b>Rp69.750</b></font><br>
+            <s>Rp93.000</s><br>
+            <font color="red">25%</font>
+          </td>
+          <td align="center">
+            <img src="buku5.jpg" alt="ekonomi mikro" width="120"><br>
+            <strong>sri rahayu s.e.m.si</strong><br>
+            ekonomi mikro<br>
+            <font color="red"><b>Rp75.000</b></font><br>
+            <s>Rp100.000</s><br>
+            <font color="red">25%</font>
+          </td>
+          </tr>
+          </table>
+    </div>
+
+    <!-- MAJALAH -->
+    <div id="majalah" class="section" style="display:none;">
+        <table border="1" cellpadding="10">
+      <h2>Best Seller</h2>
+      <tr>
+        <td align="center">
+            <img src="majalah1.jpg" alt="vogue" width="120"><br>
+            <strong></strong><br>
+            vogue<br>
+            <font color="red"><b>Rp75.000</b></font><br>
+            <s>Rp100.000</s><br>
+            <font color="red">25%</font>
+          </td>
+          <td align="center">
+            <img src="majalah2.jpg" alt="wanita nagita slavina" width="120"><br>
+            <strong></strong><br>
+           wanita nagita slavina <br>
+            <font color="red"><b>Rp90.000</b></font><br>
+            <s></s><br>
+            <font color="red"></font>
+          </td>
+          <td align="center">
+            <img src="majalah5.jpg" alt="glamour " width="120"><br>
+            <strong></strong><br>
+            glamour <br>
+            <font color="red"><b>Rp75.000</b></font><br>
+            <s></s><br>
+            <font color="red"></font>
+          </td>
+      </tr>
+    </table>
+    <table border="1" cellpadding="10">
+      <h3>Daftar Majalah</h3>
+      <tr>
+        <td align="center">
+            <img src="majalah1.jpg" alt="vogue" width="120"><br>
+            <strong></strong><br>
+            vogue<br>
+            <font color="red"><b>Rp75.000</b></font><br>
+            <s>Rp100.000</s><br>
+            <font color="red">25%</font>
+          </td>
+          <td align="center">
+            <img src="majalah2.jpg" alt="wanita nagita slavina" width="120"><br>
+            <strong></strong><br>
+             wanita nagita slavina<br>
+            <font color="red"><b>Rp90.000</b></font><br>
+            <s></s><br>
+            <font color="red"></font>
+          </td>
+          <td align="center">
+            <img src="majalah3.jpg" alt="cofficiel" width="120"><br>
+            <strong></strong><br>
+            cofficiel <br>
+            <font color="red"><b>Rp75.000</b></font><br>
+            <s></s><br>
+            <font color="red"></font>
+          </td>
+          <td align="center">
+            <img src="majalah4.jpg" alt="elle" width="120"><br>
+            <strong></strong><br>
+            elle <br>
+            <font color="red"><b>Rp55.000</b></font><br>
+            <s></s><br>
+            <font color="red"></font>
+            </td>
+            <td align="center">
+                <img src="majalah5.jpg" alt="glamour" width="120"><br>
+                <strong></strong><br>
+                glamour <br>
+                <font color="red"><b>Rp75.000</b></font><br>
+                <s></s><br>
+                <font color="red"></font>
+              </td> 
+      </tr>
+      </table>
+    </div>
+
+    <!-- KORAN -->
+    <div id="koran" class="section" style="display:none;">
+        <table border="1" cellpadding="10">
+      <h2>Best Seller</h2>
+      <tr>
+        <td align="center">
+            <img src="koran1.jpg" alt="koran kompas" width="120"><br>
+            <strong></strong><br>
+            koran kompas<br>
+            <font color="red"><b>Rp65.000</b></font><br>
+            <s></s><br>
+            <font color="red"></font>
+          </td> 
+          <td align="center">
+            <img src="koran3.jpg" alt="koran sindo" width="120"><br>
+            <strong></strong><br>
+           koran sindo<br>
+            <font color="red"><b>Rp65.000</b></font><br>
+            <s></s><br>
+            <font color="red"></font>
+            </td>
+            <td align="center">
+                <img src="koran4.jpg" alt="bangka pos" width="120"><br>
+                <strong></strong><br>
+                bangka pos <br>
+                <font color="red"><b>Rp65.000</b></font><br>
+                <s></s><br>
+                <font color="red"></font>
+                </td>
+      </tr>
+      </table>
+
+      <h3>Daftar Koran</h3>
+      <table border="1" cellpadding="10">
+        <tr>
+            <td align="center">
+                <img src="koran1.jpg" alt="koran kompas" width="120"><br>
+                <strong></strong><br>
+                 koran kompas <br>
+                <font color="red"><b>Rp65.000</b></font><br>
+                <s></s><br>
+                <font color="red"></font>
+              </td> 
+              <td align="center">
+                <img src="koran2.jpg" alt="tribun jateng" width="120"><br>
+                <strong></strong><br>
+                tribun jateng<br>
+                <font color="red"><b>Rp65.000</b></font><br>
+                <s></s><br>
+                <font color="red"></font>
+              </td>  
+              <td align="center">
+                <img src="koran3.jpg" alt="koran sindo" width="120"><br>
+                <strong></strong><br>
+                koran sindo <br>
+                <font color="red"><b>Rp65.000</b></font><br>
+                <s></s><br>
+                <font color="red"></font>
+                </td>
+                <td align="center">
+                    <img src="koran4.jpg" alt="bangka pos" width="120"><br>
+                    <strong></strong><br>
+                     bangka pos<br>
+                    <font color="red"><b>Rp65.000</b></font><br>
+                    <s></s><br>
+                    <font color="red"></font>
+                    </td>
+                    <td align="center">
+                        <img src="koran5.jpg" alt="tribun jabar" width="120"><br>
+                        <strong></strong><br>
+                        tribun jabar <br>
+                        <font color="red"><b>Rp65.000</b></font><br>
+                        <s></s><br>
+                        <font color="red"></font>
+                        </td>
+        </tr>
+      </table>
+    </div>
+
+  </main>
+
+</body>
+</html>
