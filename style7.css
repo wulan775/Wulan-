@@ -1,0 +1,73 @@
+   body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+.cover {
+  width: 45%;
+  border-radius: 10px;
+}
+
+.info {
+  margin-top: 20px;
+}
+
+h2 span {
+  font-weight: normal;
+}
+
+.harga {
+  font-weight: bold;
+  color: #002b80;
+  font-size: 18px;
+}
+
+.sinopsis {
+  text-align: justify;
+  margin-top: 10px;
+}
+
+button {
+  margin-top: 20px;
+  background-color: #0033cc;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #001f80;
+}
+
+.harga {
+  font-weight: bold;
+  color: #000;
+}
+
+.diskon {
+  color: red;
+  margin-left: 5px;
+}
+
+.coret {
+  text-decoration: line-through;
+  color: grey;
+  font-size: 12px;
+  margin-left: 5px;
+}

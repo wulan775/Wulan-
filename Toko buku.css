@@ -1,0 +1,240 @@
+body {
+      margin:0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* Header atas */
+   .topbar {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    .topbar a {
+      padding: 10px;
+      color: white;
+      text-decoration: none;
+      margin-left: 8px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .topbar .register {
+      background-color: #c656f3;
+
+    }
+
+    .topbar .login {
+      background-color: #c656f3;
+    }
+
+    /* Logo dan judul */
+    .header {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .header img {
+      width: 90px;
+      height: 90px;
+      margin-right: 10px;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .header span {
+      color: rgb(95, 166, 248);
+    }
+
+    .menu {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .menu li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .menu li a:hover {
+      text-decoration: underline;
+    }
+
+    /* Menu Utama */
+    ul.menu {
+      margin-bottom: 100px;
+      padding: 0;
+      background: linear-gradient(to right, #415dea, #4497c4);
+      padding: 20px 0;
+      display: flex;
+    }
+
+    ul.menu > li {
+      position: relative;
+    }
+
+    ul.menu > li > a {
+      display: block;
+      padding: 14px 20px;
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+    }
+
+    ul.menu > li:hover {
+      background-color: #a0bff7;
+    }
+
+    /* Dropdown level 1 */
+    ul.submenu {
+      display: none;
+      position: absolute;
+      top: 70%;
+      left: 0;
+      background-color: #f4f4f4;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      border: 1px solid #ccc;
+    }
+
+    ul.menu > li:hover > ul.submenu {
+      display: block;
+    }
+
+    ul.submenu li {
+      position: relative;
+    }
+
+    ul.submenu li a {
+      padding: 10px 20px;
+      display: block;
+      color: #0077b6;
+      text-decoration: none;
+    }
+
+    ul.submenu li:hover {
+      background-color: #ddd;
+    }
+
+    /* Dropdown level 2 (submenu dari submenu) */
+    ul.submenu ul {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 100%;
+      background-color: #f4f4f4;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      border: 1px solid #ccc;
+    }
+
+    ul.submenu li:hover > ul {
+      display: block;
+    }
+
+/* Untuk judul best seller */
+.judul-bestseller {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  color: #1a1a1a;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.judul-bestseller::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #0077cc;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Bgian emot love*/
+.love {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  color: #aaa;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.love:hover {
+  color: red;
+}
+
+.produk {
+  position: relative; /* agar .love bisa diposisikan di dalam */
+}
+
+/* bagian buku ,majalah dan koran best seller */
+.produk-container {
+  display: flex;
+  gap:20px;
+  flex-wrap: wrap;
+  margin: 50px 50px;
+}
+
+.produk {
+  background-color: #fdfdfd;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 180px;
+  padding: 10px;
+  box-shadow: 20px 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.produk:hover {
+  transform: scale(1.03);
+}
+
+.produk img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.produk h4 {
+  font-size: 14px;
+  margin: 10px 0 5px;
+  color: #555;
+}
+
+.produk p {
+  margin: 2px 0;
+  font-size: 13px;
+}
+
+.harga {
+  font-weight: bold;
+  color: #000;
+}
+
+.diskon {
+  color: red;
+  margin-left: 5px;
+}
+
+.coret {
+  text-decoration: line-through;
+  color: grey;
+  font-size: 12px;
+  margin-left: 5px;
+}

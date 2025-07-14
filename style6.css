@@ -1,0 +1,67 @@
+body {
+  margin: 20;
+  font-family: 'Poppins', sans-serif;
+  background-color: #6e6d6d;
+color: #333;
+}
+
+ 
+/* Section */
+.section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.section h1 {
+  font-size:25px;
+  margin-bottom: 20px;
+}
+
+/* Kontainer buku */
+.container-buku {
+  display: flex;
+  gap: 50px;
+  overflow-x: auto;
+  padding: 50px;
+  scroll-snap-type: x mandatory;
+}
+
+.container-buku::-webkit-scrollbar {
+  display: none;
+}
+
+/* Kotak buku */
+.kotak-buku {
+  flex: 0 0 auto;
+  width: 150px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  scroll-snap-align: start;
+}
+
+.kotak-buku img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+
+.harga {
+  font-weight: bold;
+  color: #000;
+}
+
+.diskon {
+  color: red;
+  margin-left: 5px;
+}
+
+.coret {
+  text-decoration: line-through;
+  color: grey;
+  font-size: 12px;
+  margin-left: 5px;
+}
